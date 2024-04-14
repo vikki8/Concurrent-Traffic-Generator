@@ -4,7 +4,6 @@
 This project focuses on generating real-life network traffic scenarios using labeled network traffic flows dataset obtained from [Kaggle](https://www.kaggle.com/datasets/jsrojas/labeled-network-traffic-flows-114-applications/data). <br>
 By leveraging tools like Scapy, iperf, and DITG, this project aims to simulate and analyze network traffic patterns from Docker hosts in the Mininet environment. <br>
 
-**Note:** <br>
 To adapt to the Mininet environment, the IP source and destination of the dataset are changed to the 10.0.0.0/24 range (the last octet is unaltered and the rest of the octet is changed to match the 10.0.0.0/24 range). <br>
 
 **Dataset description** <br>
