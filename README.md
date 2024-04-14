@@ -12,6 +12,11 @@ There are 4 datasets supporting from 5 to 20 hosts. <br>
 Dataset naming follows as per the number of hosts <br>
 **Ex: 5host.csv** (5 hosts IP & MAC) - 10.0.0.1 to 10.0.0.5 | 00:00:00:00:00:01 - 00:00:00:00:00:05
 
+**Traffic Generator description** <br>
+popen.py - uses Scapy <br>
+popen2.py - uses iperf <br>
+popen3.py - uses DITG <br>
+
 ## Usage
 ### Step 1: Build Ubuntu Image with traffic generator
 ```
@@ -27,6 +32,16 @@ Activate the default reactive forwarding & OpenFlow app to enable Southbound com
 Use the command `app activate org.onosproject.openflow` `app activate fwd` in ONOS CLI <br>
 You may also refer to my other repository [here](https://github.com/vikki8/onos_traffic_reroute_app/tree/main), to implement an optimized traffic forwarding & rerouting application replacing the default reactive forwarding app.
 
-### Step 4: Generate the traffic!
+### Step 4: Install Python dependencies
+```
+pip install pandas paramiko
+```
 
+### Step 5: Generate the traffic!
+```
+cd bot-python
+sudo python3 popen.py
+```
+**Note:** <br>
+You may need to edit the Python script to change the dataset which supports different numbers of hosts 
 
