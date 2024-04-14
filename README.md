@@ -9,8 +9,8 @@ To adapt to the Mininet environment, the IP source and destination of the datase
 
 **Dataset description** <br>
 There are 4 datasets supporting from 5 to 20 hosts. <br>
-Dataset naming follows as per the number of hosts<br>
-Ex: 5hots.csv (5 hosts IP & MAC) - 10.0.0.1 to 10.0.0.5 | 00:00:00:00:00:01 - 00:00:00:00:00:05
+Dataset naming follows as per the number of hosts <br>
+**Ex: 5host.csv** (5 hosts IP & MAC) - 10.0.0.1 to 10.0.0.5 | 00:00:00:00:00:01 - 00:00:00:00:00:05
 
 ## Usage
 ### Step 1: Build Ubuntu Image with traffic generator
