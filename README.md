@@ -29,6 +29,7 @@ Refer to my other repository [here](https://github.com/vikki8/SDN_clos_topology_
 ### Step 3: Install supporting ONOS application
 Activate the default reactive forwarding & OpenFlow app to enable Southbound communication from ONOS to OvS. <br>
 Use the command `app activate org.onosproject.openflow` `app activate fwd` in ONOS CLI <br>
+
 You may also refer to my other repository [here](https://github.com/vikki8/onos_traffic_reroute_app/tree/main), to implement an optimized traffic forwarding & rerouting application replacing the default reactive forwarding app.
 
 ### Step 4: Install Python dependencies
